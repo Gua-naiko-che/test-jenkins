@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('TestTao') {
             steps {
-                bat 'node --version'
+                echo Hola Tao
             }
         }
     }
