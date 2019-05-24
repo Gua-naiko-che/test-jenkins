@@ -1,0 +1,15 @@
+version: '3.4'
+
+services:
+  webapp:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    ports: 
+      - 1234:80
+  
+  webtests:
+    build:
+      context: ./tests
+      dockerfile: Dockerfile
+    tty: true
